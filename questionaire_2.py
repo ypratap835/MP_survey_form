@@ -1,18 +1,8 @@
 import pandas as pd
 import numpy as np
-import os
-import mysql.connector
 import streamlit as st
-import pyautogui as pg
 import psycopg2
  
-#connecting to the server
-#mydb = mysql.connector.connect(
-    #host="localhost",
-    #user="root",
-    #password="bhoot",
-    #database="mp_candidate_dic"
-#)
 conn = psycopg2.connect(
     host="postgresql-76953-0.cloudclusters.net",
     database="mp_candidate",
