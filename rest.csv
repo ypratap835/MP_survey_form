@@ -1,0 +1,14 @@
+What is your highest level of education?,What is your occupation?,What is your familys monthly income?,What is your religion?,Which Caste Category do you belong to?
+Postgraduate,Student,<5k (BPL),Hindu,General
+Graduate,"Professional (white collar) (Doctor, Engineer, Professor, CA, IT professional, Government Employee, bank worker, Businessman( which employ more than 10 people)",5-10k,Muslim,OBC
+12th Pass,"Self Employed (Shop-owner, Businessman etc.)",10k-20k,Sikh,SC
+10th Pass,Farmer - Owns more than 5 acre land,20k-30k,Christian,ST
+7th pass,Farmer - Owns 2.5 - 5 acre land,30k-50k,Others,Do not want to disclose
+Literate,Farmer - Owns less than 2.5 acre land,50k-80k,Do not want to disclose,
+Illiterate,Tenant Farmer,>80k,,
+Do not want to answer,Agricultural Labour,,,
+,"Skilled worker (plumber, electrician, phone repair, Constrution Supervisor, receptionist, call center , data entry operator etc.)",,,
+,"Unskilled worker (construction worker, manual labour, MGNREGA etc.)",,,
+,Retired/Pensioner,,,
+,Unemployed,,,
+,Housewife,,,
