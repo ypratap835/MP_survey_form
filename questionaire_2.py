@@ -22,17 +22,21 @@ l = ['']
 z = ['']
 dd = ['']
 # read mapping file 
-dic_name = pd.read_csv(r'dic_name.csv')
-mapping = pd.read_csv(r'mp_map.csv')
-party_list = pd.read_csv(r'party_name.csv')
+@st.cache_data
+def load_data(file_name):
+    df = pd.read_csv(file_name)
+    return df
+
+dic_name = load_data('dic_name.csv')
+mapping = load_data('mp_map.csv')
+party_list = load_data('party_name.csv')
 district = mapping['district'].unique().tolist()
 l.extend(district)
 party_list = party_list['party'].unique().tolist()
 k.extend(party_list)
-candi = pd.read_csv(r'aspirant_list.csv')
-rest = pd.read_csv(r'rest.csv')
-caste_data = pd.read_csv(r'caste_mp.csv')
-default_ac_value = m[0]
+candi = load_data('aspirant_list.csv')
+rest = load_data('rest.csv')
+caste_data = load_data('caste_mp.csv')
 
 # form title 
 st.title("Survey Madhya Pradesh by DIC ")
