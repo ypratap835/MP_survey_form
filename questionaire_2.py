@@ -2,19 +2,15 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import psycopg2
- 
-conn = psycopg2.connect(
-    host="postgresql-76953-0.cloudclusters.net",
-    database="mp_candidate",
-    user="mindshare",
-    password="mindshare",
-    port=19477,
-    connect_timeout=60,
-    keepalives=1,
-    keepalives_idle=30,
-    keepalives_interval=10,
-    keepalives_count=5
-)
+
+@st.cache_resource
+def init_connection():
+    return psycopg2.connect(host="postgresql-76953-0.cloudclusters.net", 
+                            database="mp_candidate",
+                            user="mindshare", 
+                            password="mindshare",port=19477,connect_timeout=60,keepalives=1,keepalives_idle=30,keepalives_interval=10,keepalives_count=5)
+
+conn = init_connection()
 
 k = ['']
 m = ['']
